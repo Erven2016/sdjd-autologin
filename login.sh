@@ -29,7 +29,7 @@ connect()
 
     cat $(dirname $0)/result.txt;
 
-    result_=$(cat $(dirname $0)/result.txt;)
+    result_=$(cat $(dirname $0)/result.txt);
 
     logging $result_;
 }
