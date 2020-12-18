@@ -28,10 +28,8 @@ connect()
     -v "http://139.198.3.98/sdjd/protalAction!portalAuth.action?" -o result.txt;
 
     cat $(dirname $0)/result.txt;
-
-    result_=$(cat $(dirname $0)/result.txt);
-
-    logging $result_;
+    result =$(cat $(dirname $0)/result.txt);
+    logging $result;
 }
 
 chknetwork()
@@ -65,6 +63,6 @@ then
     logging 'Heartbeat sent'
 else
     echo "network down, connecting."
-    logging 'connect to network';
+    logging 'Connecting to network ...';
     connect;
 fi

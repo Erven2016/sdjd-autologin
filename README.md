@@ -24,6 +24,7 @@ Check cookies of the login webportal, and you will find it with same name in coo
 
 ### Run setup.sh
 
+It will generate a config profile in ./ after you finish all steps.
 
 ### Run login.sh
 
