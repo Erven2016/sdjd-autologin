@@ -28,7 +28,27 @@ It will generate a config profile in ./ after you finish all steps.
 
 ### Run login.sh
 
-### Supported Universities (China Unicom campus network)
+The action will try to submit login form via POST requset, if login pass and the server will return json message "{"msg":"认证成功!","obj":"$with-your-school-id","success":true}".
+
+## Autologin Config
+
+### Connect when your router start up
+
+1. Edit /etc/rc.local
+2. Add `/$path_to_sdjd_autologin/login.sh;` before `exit 0`
+    ($path_to_sdjd_autologin is the path of this project's directory. )
+3. Save and exit
+4. 运行命令 `/etc/init.d/cron start && /etc/init.d/cron enable` 使 corn 开机启动与自启。
+
+### Set a timer to execute the shell script
+
+1. run `crontab -e` on the shell of ssh connected to your router
+2. add `*/5 * * * * /$path_to_sdjd_autologin/login.sh` in the end 
+(You can set the time when you want, and $path_to_sdjd_autologin is the path of this project's directory. )
+3. Save and exit
+4. run command `/etc/init.d/cron start && /etc/init.d/cron enable` to make cron autostart
+
+## Supported Universities (China Unicom campus network)
 | School | School ID | Tested |
 | :---: | :---: | :--: |
 | Dalian Economic and trade school | 724723 | None |
