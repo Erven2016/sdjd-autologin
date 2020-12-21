@@ -38,7 +38,6 @@ The action will try to submit login form via POST requset, if login pass and the
 2. Add `/$path_to_sdjd_autologin/login.sh;` before `exit 0`
     ($path_to_sdjd_autologin is the path of this project's directory. )
 3. Save and exit
-4. 运行命令 `/etc/init.d/cron start && /etc/init.d/cron enable` 使 corn 开机启动与自启。
 
 ### Set a timer to execute the shell script
 
