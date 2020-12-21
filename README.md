@@ -81,3 +81,5 @@ The action will try to submit login form via POST requset, if login pass and the
 
 ## Need other Language?
 
+[简体中文](https://github.com/Erven2016/sdjd-autologin/blob/main/README_ZH.md)
+

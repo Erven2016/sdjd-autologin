@@ -47,4 +47,4 @@ Erven2016 修改 | 采用 MIT 协议
 
 ## 支持的学校列表
 
-请到英文版README.md查看
+请到[英文版](https://github.com/Erven2016/sdjd-autologin/blob/main/README.md)查看
